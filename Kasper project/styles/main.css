@@ -40,6 +40,14 @@ header .h1-wrapper {
   margin-top: 230px;
 }
 
+@media (max-width: 599px) {
+  header .h1-wrapper {
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+  }
+}
+
 header .h1-wrapper h1 {
   position: relative;
   left: 400px;
@@ -51,12 +59,27 @@ header .h1-wrapper h1 span {
   line-height: 50px;
 }
 
+@media (max-width: 599px) {
+  header .h1-wrapper h1 {
+    position: unset;
+    padding: 0px 5px;
+  }
+}
+
 header .h1-wrapper p {
   color: white;
   width: 55%;
   line-height: 30px;
   position: relative;
   left: 400px;
+}
+
+@media (max-width: 599px) {
+  header .h1-wrapper p {
+    position: unset;
+    width: unset;
+    padding: 0px 20px;
+  }
 }
 
 main .service-section {
@@ -85,18 +108,46 @@ main .service-section .service-wrapper {
   margin: 100px 0 55px 0;
 }
 
+@media (max-width: 599px) {
+  main .service-section .service-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 main .service-section .service-wrapper .service-wrapper__monitor-content {
   display: flex;
   align-items: flex-start;
   justify-self: end;
 }
 
+@media (max-width: 599px) {
+  main .service-section .service-wrapper .service-wrapper__monitor-content {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+}
+
 main .service-section .service-wrapper .service-wrapper__monitor-content img {
   padding-right: 80px;
 }
 
+@media (max-width: 599px) {
+  main .service-section .service-wrapper .service-wrapper__monitor-content img {
+    padding-right: unset;
+  }
+}
+
 main .service-section .service-wrapper .service-wrapper__monitor-content div {
   text-align: left;
+}
+
+@media (max-width: 599px) {
+  main .service-section .service-wrapper .service-wrapper__monitor-content div {
+    text-align: center;
+  }
 }
 
 main .service-section .service-wrapper .service-wrapper__monitor-content div p:first-of-type {
@@ -116,12 +167,32 @@ main .service-section .service-wrapper .service-wrapper__settings-content {
   justify-self: baseline;
 }
 
+@media (max-width: 599px) {
+  main .service-section .service-wrapper .service-wrapper__settings-content {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+}
+
 main .service-section .service-wrapper .service-wrapper__settings-content img {
   padding-right: 80px;
 }
 
+@media (max-width: 599px) {
+  main .service-section .service-wrapper .service-wrapper__settings-content img {
+    padding-right: unset;
+  }
+}
+
 main .service-section .service-wrapper .service-wrapper__settings-content div {
   text-align: left;
+}
+
+@media (max-width: 599px) {
+  main .service-section .service-wrapper .service-wrapper__settings-content div {
+    text-align: center;
+  }
 }
 
 main .service-section .service-wrapper .service-wrapper__settings-content div p:first-of-type {
@@ -141,12 +212,32 @@ main .service-section .service-wrapper .service-wrapper__calculate-content {
   justify-self: end;
 }
 
+@media (max-width: 599px) {
+  main .service-section .service-wrapper .service-wrapper__calculate-content {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+}
+
 main .service-section .service-wrapper .service-wrapper__calculate-content img {
   padding-right: 80px;
 }
 
+@media (max-width: 599px) {
+  main .service-section .service-wrapper .service-wrapper__calculate-content img {
+    padding-right: unset;
+  }
+}
+
 main .service-section .service-wrapper .service-wrapper__calculate-content div {
   text-align: left;
+}
+
+@media (max-width: 599px) {
+  main .service-section .service-wrapper .service-wrapper__calculate-content div {
+    text-align: center;
+  }
 }
 
 main .service-section .service-wrapper .service-wrapper__calculate-content div p:first-of-type {
@@ -166,12 +257,31 @@ main .service-section .service-wrapper .service-wrapper__camera-content {
   justify-self: baseline;
 }
 
+@media (max-width: 599px) {
+  main .service-section .service-wrapper .service-wrapper__camera-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 main .service-section .service-wrapper .service-wrapper__camera-content img {
   padding-right: 80px;
 }
 
+@media (max-width: 599px) {
+  main .service-section .service-wrapper .service-wrapper__camera-content img {
+    padding-right: unset;
+  }
+}
+
 main .service-section .service-wrapper .service-wrapper__camera-content div {
   text-align: left;
+}
+
+@media (max-width: 599px) {
+  main .service-section .service-wrapper .service-wrapper__camera-content div {
+    text-align: center;
+  }
 }
 
 main .service-section .service-wrapper .service-wrapper__camera-content div p:first-of-type {
