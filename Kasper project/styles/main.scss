@@ -228,21 +228,45 @@ main {
         display: flex;
         align-items: flex-start;
         justify-content: center;
+        .double-phone-pic{
+            img{
+                @include for-phone-only{
+                    display: none;
+                }
+            }
+        }
         .design-includes-content {
             position: relative;
             left: 455px;
             background-color: #0f748f;
             padding: 80px 0 80px 80px;
             width: 30%;
+            @include for-phone-only{
+                width: 100%;
+                position: unset;
+                padding: 80px 0;
+            }
             p {
                 color: white;
+                @include for-phone-only{
+                    font-size: 22px;
+                    text-align: center;
+                }
             }
             ul {
                 padding-top: 50px;
+                @include for-phone-only{
+                    width: 64%;
+                    margin: 0 auto;
+                }
                 li {
                     color: white;
                     span {
                         padding-right: 30px;
+                    }
+                    @include for-phone-only{
+                        margin-bottom: 15px;
+                        font-size: 18px;
                     }
                 }
             }
@@ -263,27 +287,18 @@ main {
                 margin: 0 auto;
                 color: #a8a8a8;
                 line-height: 25px;
-            }
-        }
-        .portfolio-menu {
-            ul {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 150px 0 50px 0;
-                li {
-                    padding: 15px 35px;
-                    font-weight: bold;
-                    &:hover {
-                        color: white;
-                        background-color: #00c7fc;
-                    }
+                @include for-phone-only{
+                    width: unset;
                 }
             }
         }
         .portfolio-gallery {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-top: 25px;
+            @include for-phone-only{
+                grid-template-columns: 1fr;
+            }
             div {
                 width: 476px;
                 height: 250px;
@@ -301,15 +316,27 @@ main {
                 }
                 &:nth-child(5) {
                     background-color: #4a4b4c;
+                    @include for-phone-only{
+                        background-color: #1f2021;
+                    }
                 }
                 &:nth-child(6) {
                     background-color: #1f2021;
+                    @include for-phone-only{
+                        background-color: #4a4b4c;
+                    }
                 }
                 &:nth-child(7) {
                     background-color: #4a4b4c;
+                    @include for-phone-only{
+                        background-color: #1f2021;
+                    }
                 }
                 &:nth-child(8) {
                     background-color: #1f2021;
+                    @include for-phone-only{
+                        background-color: #4a4b4c;
+                    }
                 }
             }
         }
@@ -339,6 +366,9 @@ main {
             p {
                 color: white;
                 padding-bottom: 40px;
+                @include for-phone-only{
+                    font-size: 22px;
+                }
             }
             button {
                 background-color: #1f2021;
@@ -348,6 +378,9 @@ main {
                 font-weight: bold;
                 font-size: 13px;
                 margin-bottom: 40px;
+                @include for-phone-only{
+                    font-size: 20px;
+                }
             }
         }
     }

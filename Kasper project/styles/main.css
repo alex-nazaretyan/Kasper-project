@@ -303,6 +303,12 @@ main .design-includes {
   justify-content: center;
 }
 
+@media (max-width: 599px) {
+  main .design-includes .double-phone-pic img {
+    display: none;
+  }
+}
+
 main .design-includes .design-includes-content {
   position: relative;
   left: 455px;
@@ -311,12 +317,34 @@ main .design-includes .design-includes-content {
   width: 30%;
 }
 
+@media (max-width: 599px) {
+  main .design-includes .design-includes-content {
+    width: 100%;
+    position: unset;
+    padding: 80px 0;
+  }
+}
+
 main .design-includes .design-includes-content p {
   color: white;
 }
 
+@media (max-width: 599px) {
+  main .design-includes .design-includes-content p {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
 main .design-includes .design-includes-content ul {
   padding-top: 50px;
+}
+
+@media (max-width: 599px) {
+  main .design-includes .design-includes-content ul {
+    width: 64%;
+    margin: 0 auto;
+  }
 }
 
 main .design-includes .design-includes-content ul li {
@@ -325,6 +353,13 @@ main .design-includes .design-includes-content ul li {
 
 main .design-includes .design-includes-content ul li span {
   padding-right: 30px;
+}
+
+@media (max-width: 599px) {
+  main .design-includes .design-includes-content ul li {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
 }
 
 main .portfolio-content .header-content {
@@ -347,26 +382,22 @@ main .portfolio-content .header-content p {
   line-height: 25px;
 }
 
-main .portfolio-content .portfolio-menu ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 150px 0 50px 0;
-}
-
-main .portfolio-content .portfolio-menu ul li {
-  padding: 15px 35px;
-  font-weight: bold;
-}
-
-main .portfolio-content .portfolio-menu ul li:hover {
-  color: white;
-  background-color: #00c7fc;
+@media (max-width: 599px) {
+  main .portfolio-content .header-content p {
+    width: unset;
+  }
 }
 
 main .portfolio-content .portfolio-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 25px;
+}
+
+@media (max-width: 599px) {
+  main .portfolio-content .portfolio-gallery {
+    grid-template-columns: 1fr;
+  }
 }
 
 main .portfolio-content .portfolio-gallery div {
@@ -394,16 +425,40 @@ main .portfolio-content .portfolio-gallery div:nth-child(5) {
   background-color: #4a4b4c;
 }
 
+@media (max-width: 599px) {
+  main .portfolio-content .portfolio-gallery div:nth-child(5) {
+    background-color: #1f2021;
+  }
+}
+
 main .portfolio-content .portfolio-gallery div:nth-child(6) {
   background-color: #1f2021;
+}
+
+@media (max-width: 599px) {
+  main .portfolio-content .portfolio-gallery div:nth-child(6) {
+    background-color: #4a4b4c;
+  }
 }
 
 main .portfolio-content .portfolio-gallery div:nth-child(7) {
   background-color: #4a4b4c;
 }
 
+@media (max-width: 599px) {
+  main .portfolio-content .portfolio-gallery div:nth-child(7) {
+    background-color: #1f2021;
+  }
+}
+
 main .portfolio-content .portfolio-gallery div:nth-child(8) {
   background-color: #1f2021;
+}
+
+@media (max-width: 599px) {
+  main .portfolio-content .portfolio-gallery div:nth-child(8) {
+    background-color: #4a4b4c;
+  }
 }
 
 main .portfolio-content .btn-more {
@@ -440,6 +495,12 @@ main .awesome-video .awesome-video__content p {
   padding-bottom: 40px;
 }
 
+@media (max-width: 599px) {
+  main .awesome-video .awesome-video__content p {
+    font-size: 22px;
+  }
+}
+
 main .awesome-video .awesome-video__content button {
   background-color: #1f2021;
   color: white;
@@ -448,6 +509,12 @@ main .awesome-video .awesome-video__content button {
   font-weight: bold;
   font-size: 13px;
   margin-bottom: 40px;
+}
+
+@media (max-width: 599px) {
+  main .awesome-video .awesome-video__content button {
+    font-size: 20px;
+  }
 }
 
 main .about-us {
